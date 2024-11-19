@@ -1,9 +1,4 @@
-SELECT 
-    EmployeeUNI.unique_id, 
-    Employees.name
-FROM 
-    Employees
-LEFT JOIN 
-    EmployeeUNI 
-ON 
-    Employees.id = EmployeeUNI.id;
+SELECT name, unique_id
+FROM EMPLOYEEUNI
+RIGHT JOIN EMPLOYEES
+ON EMPLOYEES.ID = EMPLOYEEUNI.ID 
