@@ -1,9 +1,17 @@
-SELECT D.Name AS department, E1.name AS Employee, E1.salary
-FROM Employee E1
-JOIN Department D
-ON E1.departmentId = D.id
-WHERE 3 > (SELECT COUNT(DISTINCT(E2.salary))
-            FROM Employee E2
-            WHERE E2.salary > E1.salary
-            AND E1.departmentId = E2.departmentId
-            )   
+    SELECT     
+        d.name as "Department"                     
+        ,e1.Name as "Employee"
+        , e1.Salary as "Salary"
+       
+    FROM 
+        Employee e1 
+        JOIN Employee e2  JOIN Department d
+                      
+    WHERE 
+        e1.DepartmentId = e2.DepartmentId 
+        AND e1.Salary <= e2.Salary  AND d.id = e2.DepartmentId
+                            
+                       
+    GROUP BY d.name,e1.id
+    HAVING COUNT(DISTINCT(e2.Salary)) <= 3
+     order by d.name , salary desc  
