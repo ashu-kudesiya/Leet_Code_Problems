@@ -1,4 +1,4 @@
-876543210
+76543210
 
 <img src="https://interviewguide.dev/images/leetcode.png" alt="LeetCode" width="200"/>
 
