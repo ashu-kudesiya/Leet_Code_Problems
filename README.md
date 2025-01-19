@@ -1,4 +1,4 @@
-6543210
+543210
 
 <img src="https://interviewguide.dev/images/leetcode.png" alt="LeetCode" width="200"/>
 
