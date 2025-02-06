@@ -2,7 +2,6 @@ class Solution:
     def compress(self, chars: List[str]) -> int:
         ans = 0
         i = 0
-
         while i < len(chars):
             letter = chars[i]
             count = 0
